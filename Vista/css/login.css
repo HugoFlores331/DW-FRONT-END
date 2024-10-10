@@ -2,9 +2,48 @@ body{
     color: antiquewhite;
     background-color: black;
     text-align: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 a{
     text-decoration: none;
     color: antiquewhite;
+}
+
+section{
+    background-color: darkred;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 8rem;
+    border-radius:28px;
+    display:inline-block;
+}
+
+.cont{
+    margin-top: 20px;
+}
+
+.cont input{
+    width: 15rem;
+    height: 25px;
+    border-radius:10px;
+    border:1px solid;
+    text-align: center;
+}
+
+.cont button{
+    width: 10rem;
+    height: 32px;
+    border-radius:10px;
+    border: none;
+}
+
+.cont button:hover{
+    background-color:black;
+    color: aliceblue;
+}
+
+a:hover{
+    color: black;
 }
