@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://us.123rf.com/450wm/apostrophe/apostrophe1801/apostrophe180100101/94426180-fondo-azul-oscuro-foco-con-gruesas-sombras-negras-de-borde-de-vi%C3%B1eta.jpg'); /* Link de Imagen de Fondo*/
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+select, input[type="text"], input[type="tel"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.form-group i {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.form-title {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Cambiar colores e íconos personalizados */
+#paymentType option[value="credito"]::before {
+    content: "\f09d"; /* Icono de tarjeta */
+}
+#paymentType option[value="debito"]::before {
+    content: "\f19c"; /* Icono de débito */
+}
+#paymentType option[value="contraEntrega"]::before {
+    content: "\f0d1"; /* Icono de camión */
+}
+#paymentType option[value="tienda"]::before {
+    content: "\f015"; /* Icono de tienda */
+}
