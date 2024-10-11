@@ -1,0 +1,49 @@
+body{
+    background-color:black;
+    color:aliceblue;
+    text-align: center;
+}
+
+section{
+    margin-top:7rem;
+    display: inline-block;
+    text-align: left;
+    background-color: crimson;
+    border-radius: 3rem;
+    width:25rem;
+    height: 22rem;
+}
+
+h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+input {
+    width:20rem;
+    height:25px;
+    border-radius:3rem;
+    border:none;
+    text-align: center;
+}
+
+input,
+label{
+    margin-left: 2rem;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+button{
+    margin-top: 1rem;
+    margin-left:8rem;
+    width:9rem;
+    height:30px;
+    border-radius:3rem;
+    border: none;
+}
+
+button:hover{
+    background-color:black;
+    color: aliceblue;
+}
