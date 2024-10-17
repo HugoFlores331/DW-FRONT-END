@@ -1,23 +1,16 @@
-body 
-{
+body {
     font-family: Arial, sans-serif;
-   /* background-image: url('https://img.freepik.com/foto-gratis/fondo-pantalla-patron-fondo-abstracto-grunge-dinamico-verde-foto-gratis_1340-34791.jpg'); /* Coloca aquí la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flexbox;
     height: 100vh;
     padding: 0;
     margin: 0;
-    background:linear-gradient(#7209bf,#3f37c0)
-    
+    background:#7209bf;
 }
 
-
-.container
- {
+.container {
     background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para mayor legibilidad */
     padding: 20px;
     border-radius: 10px;
@@ -26,24 +19,30 @@ body
     margin: 50px auto;
 }
 
-
-
-h1, h2 
-{
+h1, h2 {
     text-align: center;
     color: #333;
 }
 
-label 
-{
+label {
     margin: 10px 0 5px;
     display: block;
     font-weight: bold;
 }
 
-input[type="text"], select 
-{
-    width:24rem;
+h3 {
+    text-align: center;
+}
+
+input{
+    width: 24rem;
+}
+
+select{
+    width:25rem;
+}
+
+input[type="text"], select {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -51,8 +50,7 @@ input[type="text"], select
     font-size: 16px;
 }
 
-input[type="submit"], button 
-{
+input[type="submit"], button {
     background-color: #007bff;
     color: white;
     border: none;
@@ -63,8 +61,7 @@ input[type="submit"], button
     font-size: 16px;
 }
 
-input[type="submit"]:hover, button:hover 
-{
+input[type="submit"]:hover, button:hover {
     background-color: #0056b3;
 }
 

@@ -9,14 +9,11 @@
 <body>
     <div class="container">
         <h1>Registro de Tienda</h1>
-        
-        <form action="procesar_tienda.php" method="POST">
-            <label for="nombre">Direccion:</label>
-            <input type="text" id="nombre" name="nombre"
-              placeholder="Ingrese direccion"/>
-            
+
+        <form >
             <label for="tipo_tienda">Tipo de Tienda:</label>
             <select id="tipo_tienda" name="tipo_tienda" required="true">
+                <option value="0">Selecione el tipo de tienda</option>
                 <option value="fisica">Física</option>
                 <option value="virtual">Virtual</option>
             </select>
@@ -44,13 +41,78 @@
                 <option value="totonicapan">Totonicapán</option>
                 <option value="zaqueques">Zacapa</option>
             </select>
-            
+
+            <label for="nombre">Municipio:</label>
+                <input type="text" id="municipio" name="municipio" placeholder="Ingrese municipio"/>
+    
+            <label for="nombre">Direccion:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese direccion"/>
+    
+            <label for="telefono">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" placeholder="Ingrese numero de telefono">
+    
+            <label for="dias">Dias habiles:</label>
+                <select id="diaInicio" name="diaInicio" required>
+                    <option value="0">Seleccione los dias apertura</option>
+                    <option value="1">Lunes a Sabado</option>
+                    <option value="2">Lunes a Domingo</option>
+                </select>
+    
+            <h3>Horario entre semena</h3>
+                <label for="dinicio">Apertura de tienda</label>
+                    <select id="diaInicio" name="hora" required> 
+                        <option value="0">Seleccione hora de inicio</option>
+                        <option value="1">6:00 AM</option>
+                        <option value="2">7:00 AM</option>
+                        <option value="3">8:00 AM</option>
+                        <option value="4">9:00 AM</option>
+                        <option value="5">10:00 AM</option>
+                    </select> 
+                    
+                <label for="dinicio">Cierre de tienda</label>
+                    <select id="diaInicio" name="hora" required>
+                        <option value="0">Seleccione hora de finalizacion</option>
+                        <option value="1">4:00 P.M</option>
+                        <option value="2">5:00 P.M</option>
+                        <option value="3">6:00 P.M</option>
+                        <option value="4">7:00 P.M</option>
+                        <option value="5">8:00 P.M</option>
+                        <option value="5">9:00 P.M</option>
+                    </select> 
+    
+            <h3>Horario fin de semana y dias festivos</h3>
+                <label for="dinicio">Apertura de tienda</label>
+                    <select id="diaInicio" name="dia" required>
+                        <option value="0">Seleccione hora de inicio</option>
+                        <option value="1">6:00 AM</option>
+                        <option value="2">7:00 AM</option>
+                        <option value="3">8:00 AM</option>
+                        <option value="4">9:00 AM</option>
+                        <option value="5">10:00 AM</option>
+                        <option value="6">11:00 AM</option>
+                    </select> 
+                    
+                <label for="dinicio">Cierre de tienda</label>
+                    <select id="diaInicio" name="hora" required>
+                        <option value="0">Seleccione hora de finalizacion</option>
+                        <option value="1">12:00 P.M</option>
+                        <option value="2">1:00 P.M</option>
+                        <option value="3">2:00 P.M</option>
+                        <option value="4">3:00 P.M</option>
+                        <option value="5">4:00 P.M</option>
+                        <option value="6">5:00 P.M</option>
+                        <option value="7">6:00 P.M</option>
+                        <option value="8">7:00 P.M</option>
+                        <option value="9">8:00 P.M</option>
+                        <option value="10">9:00 P.M</option>
+                    </select> 
+                 
             <input type="submit" value="Crear Tienda">
         </form>
         
         <h2>Lista de Tiendas</h2>
-        <button onclick="location.href='#'">Ver Tiendas</button>
-
-    </div>
+            <button onclick="location.href='listadoTiendas.html'">Ver Tiendas</button>
+    
+    </div>    
 </body>
 </html>
