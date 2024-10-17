@@ -51,14 +51,14 @@
             <label for="telefono">Telefono:</label>
                 <input type="text" name="telefono" id="telefono" placeholder="Ingrese numero de telefono">
     
+            <h3>Horario entre semena</h3>
+
             <label for="dias">Dias habiles:</label>
                 <select id="diaInicio" name="diaInicio" required>
-                    <option value="0">Seleccione los dias apertura</option>
-                    <option value="1">Lunes a Sabado</option>
-                    <option value="2">Lunes a Domingo</option>
+                    <option value="0">Seleccione los dias de apertura</option>
+                    <option value="1">Lunes a Viernes</option>
                 </select>
-    
-            <h3>Horario entre semena</h3>
+
                 <label for="dinicio">Apertura de tienda</label>
                     <select id="diaInicio" name="hora" required> 
                         <option value="0">Seleccione hora de inicio</option>
@@ -80,7 +80,16 @@
                         <option value="5">9:00 P.M</option>
                     </select> 
     
-            <h3>Horario fin de semana y dias festivos</h3>
+            <h3>Horario fin de semana</h3>
+
+                <label for="dias">Dias habiles:</label>
+                    <select id="diaInicio" name="diaInicio" required>
+                        <option value="0">Seleccione los dias de apertura</option>
+                        <option value="1">Sabado y Domingo</option>
+                        <option value="1">Sabado</option>
+                        <option value="1">Domingo</option>
+                    </select>
+
                 <label for="dinicio">Apertura de tienda</label>
                     <select id="diaInicio" name="dia" required>
                         <option value="0">Seleccione hora de inicio</option>
@@ -95,6 +104,35 @@
                 <label for="dinicio">Cierre de tienda</label>
                     <select id="diaInicio" name="hora" required>
                         <option value="0">Seleccione hora de finalizacion</option>
+                        <option value="1">12:00 P.M</option>
+                        <option value="2">1:00 P.M</option>
+                        <option value="3">2:00 P.M</option>
+                        <option value="4">3:00 P.M</option>
+                        <option value="5">4:00 P.M</option>
+                        <option value="6">5:00 P.M</option>
+                        <option value="7">6:00 P.M</option>
+                        <option value="8">7:00 P.M</option>
+                        <option value="9">8:00 P.M</option>
+                        <option value="10">9:00 P.M</option>
+                    </select> 
+
+            <h3>Horario dias festivos</h3>
+                <label for="dinicio">Apertura de tienda</label>
+                    <select id="diaInicio" name="dia" required>
+                        <option value="0">Seleccione hora de inicio</option>
+                        <option value="no">------</option>
+                        <option value="1">6:00 AM</option>
+                        <option value="2">7:00 AM</option>
+                        <option value="3">8:00 AM</option>
+                        <option value="4">9:00 AM</option>
+                        <option value="5">10:00 AM</option>
+                        <option value="6">11:00 AM</option>
+                    </select> 
+                    
+                <label for="dinicio">Cierre de tienda</label>
+                    <select id="diaInicio" name="hora" required>
+                        <option value="0">Seleccione hora de finalizacion</option>
+                        <option value="no">------</option>
                         <option value="1">12:00 P.M</option>
                         <option value="2">1:00 P.M</option>
                         <option value="3">2:00 P.M</option>
