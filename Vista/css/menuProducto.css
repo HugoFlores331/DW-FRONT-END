@@ -19,7 +19,7 @@ section {
     border-radius: 8px;
     transition: transform 0.2s;
     text-align: center;
-    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 1 1 200px;
 }
 
 .m-producto:hover {
@@ -38,7 +38,7 @@ section {
 
 .m-producto img {
     width: 100%;
-    max-width: 150px; /* Responsive image size */
+    max-width: 150px; 
     margin-bottom: 0.5rem;
 }
 
