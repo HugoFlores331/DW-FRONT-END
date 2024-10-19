@@ -1,0 +1,18 @@
+footer{
+    background-color: black;
+    text-align: center;
+    height:5rem;
+}
+
+p{
+    color: aliceblue;
+}
+
+img{
+    margin-top: 12px;
+    transition: all 0.3s;
+}
+
+img:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    display: inline-flex;
+    margin-left: 15rem;
+}
+
+.m-tienda{
+    background-color:crimson;
+    width: 20rem;
+    height: 20rem;
+    margin-left:3rem;
+    margin-right:2rem;
+    text-align: center;
+    border-radius:3rem;
+    margin-top:3rem;
+    transition: all 0.3s;
+}
+
+.m-tienda img{
+    width: 15rem;
+}
+
+.m-tienda p{
+    color: aliceblue;
+}
+
+.m-tienda a{
+    text-decoration: none;
+}
+
+h2{
+    margin-left: 35rem;
+}
+
+.m-tienda:hover{
+    transform: scale(1.1);
+}
