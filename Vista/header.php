@@ -19,11 +19,11 @@
             </div>
 
             <div class="textoo">
-                <a href="menuUsuarios.html">Perfil</a>
+                <a href="menuUsuarios.php">Perfil</a>
             </div>
             
             <div class="textoo">
-                <a href="menuTienda.html">Tiendas </a>
+                <a href="menuTienda.php">Tiendas </a>
             </div>
 
             <div>
@@ -33,7 +33,7 @@
             </div> 
             
             <div>
-                <a href="login.html">
+                <a href="login.php">
                     <img src="icon/cerrar-sesion.png" width="50">
                 </a>
             </div>

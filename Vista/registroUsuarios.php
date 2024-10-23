@@ -9,6 +9,11 @@
     </head>
 
     <body>
+
+        <?php
+            require('header.php');
+        ?>
+
         <section>
             <div class="usuario">
                 <h2>Regitro de informacion Personal</h2>
@@ -45,7 +50,7 @@
 
  
             <div class="usuario">
-                <a href="registroLogin.html">
+                <a href="registroLogin.php">
                     <button type="button">Siguiente</button>
                 </a>
             </div>

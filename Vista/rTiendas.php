@@ -6,7 +6,13 @@
     <title>Registro de Tienda</title>
     <link rel="stylesheet" href="css/rTiendas.css" /> 
 </head>
+
 <body>
+
+    <?php
+        require('header.php');
+    ?>
+
     <div class="container">
         <h1>Registro de Tienda</h1>
 
@@ -149,7 +155,7 @@
         </form>
         
         <h2>Lista de Tiendas</h2>
-            <button onclick="location.href='listadoTiendas.html'">Ver Tiendas</button>
+            <button onclick="location.href='listadoTiendas.php'">Ver Tiendas</button>
     
     </div>    
 </body>

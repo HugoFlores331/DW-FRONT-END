@@ -8,6 +8,12 @@
     </head>
 
     <body>
+        <?php
+            require('header.php');
+        ?>
+
+        <br>
+
         <section>
 
             <div class="ing-pro">

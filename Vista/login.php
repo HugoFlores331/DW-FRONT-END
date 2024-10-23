@@ -26,7 +26,7 @@
             </div>
 
             <div class="cont">
-                <a href="menuInicio.html">
+                <a href="menuInicio.php">
                     <button id="vd-password"> Ingresar </button>
                 </a>
             </div>

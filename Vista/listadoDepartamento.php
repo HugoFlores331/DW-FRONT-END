@@ -9,6 +9,10 @@
 
     <body>
 
+        <?php
+            require('header.php');
+        ?>
+
         <h3>LIstado departamentos de productos</h3>
         
         <section>

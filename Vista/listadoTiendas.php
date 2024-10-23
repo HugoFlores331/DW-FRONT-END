@@ -9,6 +9,12 @@
 
     <body>
 
+        <?php
+            require('header.php');
+        ?>
+
+        <br>
+
         <section>
             <select id="departamento" name="departamento" required>
                 <option value="">Departamento</option>

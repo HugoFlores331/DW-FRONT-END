@@ -9,18 +9,22 @@
 
     <body>
 
+        <?php
+            require('header.php');
+        ?>
+
         <h2>Menu usuario</h2>
         
        <section>
             
-            <a href="registroUsuarios.html">
+            <a href="registroUsuarios.php">
                 <div class="m-tienda">
                     <p>Crear usuario</p>
                     <img src="icon/nuevo-usuario.png">
                 </div>
             </a>
 
-            <a href="rTiendas.html">
+            <a href="listadoUsuario.php">
                 <div class="m-tienda">
                     <p>Ver usuario</p>
                     <img src="icon/ver-usuarios.png">

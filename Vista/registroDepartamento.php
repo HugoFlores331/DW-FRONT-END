@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/rDepartamentos.css" />
 </head>
 <body>
+
+    <?php
+        require('header.php');
+    ?>
+
+
     <div class="container">
         <h1>Registro Departamento</h1>
         
@@ -19,7 +25,7 @@
         </form>
         
         <h2>Lista de Tiendas</h2>
-        <button onclick="location.href='listadoDepartamento.html'">Ver Departamento</button>
+        <button onclick="location.href='listadoDepartamento.php'">Ver Departamento</button>
 
     </div>
 </body>

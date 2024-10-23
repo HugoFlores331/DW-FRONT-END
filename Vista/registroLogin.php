@@ -33,7 +33,7 @@
             </div>
 
             <div class="rLogin">
-                <a href="menuInicio.html">
+                <a href="menuInicio.php">
                     <button type="button">Confirmar</button>
                 </a>
             </div>

@@ -15,11 +15,7 @@
                 <option value="0">Tipo de usuario</option>
                 <option value="1">Administrador</option>
                 <option value="2">Mayorista</option>
-                <option value="3">Menorista</option>
-            </select>
-
-            <select name="dep" id="dep">
-                <option value="0">Departamento</option>
+                <option value="3">Minorista</option>
             </select>
 
             <button>Aplicar</button>

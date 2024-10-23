@@ -9,19 +9,23 @@
 
     <body>
 
+    <?php
+        require('header.php');
+    ?>
+
         <h2>Menu tienda</h2>
         
        <section>
             
             <div class="m-tienda">
-                <a href="rTiendas.html">
+                <a href="rTiendas.php">
                     <p>Crear Tienda</p>
                     <img src="icon/+tienda.png">
                 </a>
             </div>
 
             <div class="m-tienda">
-                <a href="listadoTiendas.html">
+                <a href="listadoTiendas.php">
                     <p>Listado tienda</p>
                     <img src="icon/tienda.png">
                 </a>
