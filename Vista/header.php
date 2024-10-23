@@ -15,7 +15,7 @@
             </div>
 
             <div class="textoo">
-                <a href="menuProducto.html">Categorias de Producto</a>
+                <a href="menuProducto.php">Categorias de Producto</a>
             </div>
 
             <div class="textoo">

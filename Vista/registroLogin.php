@@ -33,7 +33,7 @@
             </div>
 
             <div class="rLogin">
-                <a href="#">
+                <a href="menuInicio.html">
                     <button type="button">Confirmar</button>
                 </a>
             </div>

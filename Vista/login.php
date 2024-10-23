@@ -32,7 +32,7 @@
             </div>
 
             <div class="cont">
-                <a href="registroLogin.html">Registrarme</a>
+                <a href="registroLogin.php">Registrarme</a>
             </div>
 
         </section>
