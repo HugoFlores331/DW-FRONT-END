@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para los íconos -->
 </head>
 <body>
-<!-- Formulario de detalles personales -->
+
+<?php
+    require('header.php');
+?>
+
 <div class="form-container">
     <h2>Tus detalles</h2>
     <form>

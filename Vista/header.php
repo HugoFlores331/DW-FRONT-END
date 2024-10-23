@@ -27,7 +27,7 @@
             </div>
 
             <div>
-                <a href="#">
+                <a href="carrito.php">
                     <img src="icon/agregar-compra.png" width="50">
                 </a>
             </div> 
