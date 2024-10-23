@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pago</title>
-    <link rel="stylesheet" href="css/Fpago.css"> <!-- Enlazado con el archivo CSS -->
+    <link rel="stylesheet" href="css/formaDePago.css"> <!-- Enlazado con el archivo CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome para los íconos -->
 </head>
 <body>
+<!-- Formulario de detalles personales -->
+<div class="form-container">
+    <h2>Tus detalles</h2>
+    <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento" required>
+            <option value="guatemala">Guatemala</option>
+            <option value="alta_verapaz">Alta Verapaz</option>
+            <option value="baja_verapaz">Baja Verapaz</option>
+            <option value="chimaltenango">Chimaltenango</option>
+            <option value="chiquimula">Chiquimula</option>
+            <option value="el_progreso">El Progreso</option>
+            <option value="escuintla">Escuintla</option>
+            <option value="guatemala">Guatemala</option>
+            <option value="huehuetenango">Huehuetenango</option>
+            <option value="izabal">Izabal</option>
+            <option value="jalapa">Jalapa</option>
+            <option value="jutiapa">Jutiapa</option>
+            <option value="peten">Petén</option>
+            <option value="quetzaltenango">Quetzaltenango</option>
+            <option value="quiché">Quiché</option>
+            <option value="retalhuleu">Retalhuleu</option>
+            <option value="sacatepequez">Sacatepéquez</option>
+            <option value="san_marcos">San Marcos</option>
+            <option value="santa_rosa">Santa Rosa</option>
+            <option value="solola">Sololá</option>
+            <option value="suchitepequez">Suchitepéquez</option>
+            <option value="totonicapan">Totonicapán</option>
+            <option value="zacapa">Zacapa</option>
+
+            <!-- Add more options as necessary -->
+        </select>
+
+        <label for="facturacion">Nombre para facturación:</label>
+        <input type="text" id="facturacion" name="facturacion">
+
+        <label for="nit">NIT (Sin Guion):</label>
+        <input type="text" id="nit" name="nit">
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
     <div class="form-container">
         <h2>Tipos De Pago</h2>
         <form id="paymentForm">
@@ -71,7 +126,7 @@
                     <option value="tienda2">Tienda 2 - Dirección 2</option>
                     <option value="tienda3">Tienda 3 - Dirección 3</option>
                 </select>
-                <label for="customAddress">O ingrese una dirección:</label>
+                <label for="customAddress">Ingrese una dirección:</label>
                 <input type="text" id="customAddress" name="customAddress" placeholder="Ingrese su dirección">
             </div>
 
@@ -79,6 +134,6 @@
         </form>
     </div>
 
-    <script src="js/Fpagoscript.js"></script> <!-- Enlazado con el archivo JavaScript -->
+    <script src="js/formaDePago.js"></script> <!-- Enlazado con el archivo JavaScript -->
 </body>
 </html>
