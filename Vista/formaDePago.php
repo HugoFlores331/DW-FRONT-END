@@ -18,6 +18,7 @@
     <form>
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" required>
+        
 
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" required>
