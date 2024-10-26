@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar la contraseña usando ==
         if ($password == $row['u-password']) {
             // Redirigir a la página de usuarios
-            header("Location: ../Vista/menuUsuarios.php");
+            header("Location: ../Vista/menuInicio.php");
             exit();
         } else {
             // Contraseña incorrecta

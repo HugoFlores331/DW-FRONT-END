@@ -1,45 +1,36 @@
 <?php
-// Incluir el archivo de conexión a la base de datos
+// Incluir archivo de conexión a la base de datos
 include '../Controlador/conexion.php';
 
-// Función para registrar un nuevo usuario
-function registrarUsuario($conn, $email, $password, $id_rol = 1) {
-    // Verificar que las contraseñas coincidan
-    if ($_POST['u-password'] !== $_POST['v-password']) {
-        return "Las contraseñas no coinciden.";
+// Verificar si el formulario fue enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener los datos del formulario
+    $correo = $_POST['u-correo'];
+    $password = $_POST['u-password'];
+    $v_password = $_POST['v-password'];
+
+    // Validar que las contraseñas coincidan
+    if ($password !== $v_password) {
+        die("Las contraseñas no coinciden.");
     }
 
-    // Hashear la contraseña
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    // Hashear la contraseña antes de almacenarla
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Preparar la consulta
-    $stmt = $conn->prepare("INSERT INTO login (u-correo, u-password, id_rol) VALUES (?, ?, ?)");
-    
-    if (!$stmt) {
-        return "Error al preparar la consulta: " . $conn->error;
-    }
-
-    // Vincular parámetros
-    $stmt->bind_param("ssi", $email, $hashedPassword, $id_rol);
+    // Preparar la consulta para insertar un nuevo usuario
+    $stmt = $conn->prepare("INSERT INTO login (u-corre, u-password, id_rol) VALUES (?, ?, ?)");
+    $id_rol = 1; // Asignar el id_rol 1
+    $stmt->bind_param("ssi", $correo, $hashed_password, $id_rol);
 
     // Ejecutar la consulta
     if ($stmt->execute()) {
-        $lastInsertedId = $conn->insert_id; // Obtener el último ID insertado
-        $stmt->close(); // Cerrar la declaración
-        return "Registro creado exitosamente. ID: " . $lastInsertedId;
+        echo "Usuario registrado exitosamente.";
     } else {
-        return "Error al crear el registro: " . $stmt->error;
+        echo "Error al registrar el usuario: " . $conn->error;
     }
-}
 
-// Manejar la creación de un nuevo registro
-if (isset($_POST['registrar'])) {
-    $email = $_POST['u-correo'];
-    $password = $_POST['u-password'];
-    
-    // Llamar a la función para registrar el usuario
-    $resultado = registrarUsuario($conn, $email, $password);
-    echo $resultado; // Mostrar el resultado
+    // Cerrar la declaración
+    $stmt->close();
 }
 
 // Cerrar la conexión

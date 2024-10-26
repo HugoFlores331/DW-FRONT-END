@@ -15,6 +15,7 @@
         ?>
 
         <br>
+        <br><br><br><br>
 
         <div class="container">
         <h1>Rastreo de Paquete</h1>
@@ -27,5 +28,9 @@
 
         <script src="js/rastreo.js"></script>
     </div>
+    <br><br><br>
+    <?php
+            require('footer.php');
+        ?>
 
 </html>

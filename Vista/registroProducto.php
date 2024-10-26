@@ -20,12 +20,17 @@
                 <h2>Ingreso de Producto</h2>
             </div>
 
-            <div class="ing-pro">
+            <?php
+                require('../Modelo/m_tiendas.php');
+            ?>
+
+            <!-- <div class="ing-pro">
                 <label >Seleccione la tienda</label>
                     <select name="tienda" id="tienda" required>
                         <option value="0">Seleccione la tienda</option>
                     </select>
             </div>
+           !-->
 
             <div class="ing-pro">
                 <label>Codigo de barras: </label>
@@ -38,12 +43,9 @@
                     <input type="text" name="nombreProducto" id="nombreProducto" placeholder="Nombre del producto">
             </div>
 
-            <div class="ing-pro">
-                <label>Tipo departamento del producto</label>
-                    <select name="tipoDepartamento" id="tipoDepartamento">
-                        <option value="0">Departamento del producto</option>
-                    </select>
-            </div>
+            <?php
+                require('../Modelo/m_dproducto.php');
+            ?>
 
             <div class="ing-pro">
                 <label>Marca del producto: </label>
@@ -77,5 +79,9 @@
             </div>
             
         </section>
+        <br><br>
+        <?php
+            require('footer.php');
+        ?>
     </body>
 </html>

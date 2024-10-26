@@ -41,5 +41,9 @@
 
             </table>
         </section>    
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <?php
+            require('footer.php');
+        ?>
     </body>
 </html>

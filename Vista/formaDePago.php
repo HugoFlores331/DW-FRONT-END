@@ -24,7 +24,7 @@
         <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo electronico">
 
         <label for="direccion">Dirección:</label>
         <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion">
@@ -145,6 +145,10 @@
     <br>
     <br>
     <br>
+
+    <?php
+            require('footer.php');
+        ?>
 
     <script src="js/formaDePago.js"></script> <!-- Enlazado con el archivo JavaScript -->
 </body>

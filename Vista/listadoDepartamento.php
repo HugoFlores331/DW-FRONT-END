@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Listado Departamento</title>
-        <link rel="stylesheet" href="css/listadoDepartamentos.css">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Departamento</title>
+    <link rel="stylesheet" href="css/listadoDepartamentos.css">
+</head>
 
-    <body>
+<body>
 
-        <?php
-            require('header.php');
-        ?>
+    <?php
+        require('header.php');
 
-        <h3>LIstado departamentos de productos</h3>
-        
-        <section>
+        // Incluir archivo de conexión a la base de datos
+        include '../Controlador/conexion.php';
 
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Departamento de productos</th>
-                </tr>
+        // Realizar la consulta para obtener los departamentos
+        $query = "SELECT nombre FROM dproducto"; // Solo seleccionamos el nombre
+        $result = $conn->query($query);
+    ?>
 
-                <tr>
-                    <td>1.</td>
-                    <td>Limpieza</td>
-                </tr>
+    <h3>Listado departamentos de productos</h3>
+    
+    <section>
+        <table>
+            <tr>
+                <th>Departamento de productos</th>
+            </tr>
 
-                <tr> 
-                    <td>2.</td>
-                    <td>Ropa</td>
-                </tr>
+            <?php
+            // Verificar si se obtuvieron resultados
+            if ($result && $result->num_rows > 0) {
+                // Recorrer los resultados y generar las filas de la tabla
+                while ($row = $result->fetch_assoc()) {
+                    echo '<tr>';
+                    echo '<td>' . htmlspecialchars($row['nombre']) . '</td>';
+                    echo '</tr>';
+                }
+            } else {
+                echo '<tr><td>No hay departamentos disponibles.</td></tr>';
+            }
 
-                <tr>
-                    <td>3.</td>
-                    <td>Golozinas</td>
-                </tr>
+            // Cerrar la conexión
+            $conn->close();
+            ?>
+        </table>
+    </section>
 
-                <tr>
-                    <td>4.</td>
-                    <td>Carnes</td>
-                </tr>
+    <br><br>
 
-            </table>
-        </section>
-    </body>
+    <?php
+        require('footer.php');
+    ?>
+</body>
 </html>

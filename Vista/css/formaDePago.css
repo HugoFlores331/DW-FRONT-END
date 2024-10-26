@@ -37,6 +37,10 @@ select, input[type="text"], input[type="tel"], button {
     text-align: center;
 }
 
+input[type="email"]{
+    text-align: center;
+}
+
 button {
     background-color: #4CAF50;
     color: white;

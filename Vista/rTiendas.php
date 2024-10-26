@@ -158,5 +158,9 @@
             <button onclick="location.href='listadoTiendas.php'">Ver Tiendas</button>
     
     </div>    
+    <br>
+    <?php
+            require('footer.php');
+        ?>
 </body>
 </html>

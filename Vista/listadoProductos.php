@@ -45,7 +45,7 @@
                     <td>Coca Cola</td>
                     <td>Coca Cola</td>
                     <td>3 Litros</td>
-                    <td>Q 24.00</td>
+                    <td>Q 22.00</td>
                     <td>Q.20.00 </td>
                     <td>100</td>
                     <td>20</td>
@@ -54,5 +54,10 @@
 
             </table>
         </section>
+
+        <br><br><br><br><br><br><br><br><br>
+        <?php
+            require('footer.php');
+        ?>
     </body>
 </html>
