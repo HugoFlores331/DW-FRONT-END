@@ -1,23 +1,23 @@
 <?php
-// Incluir archivo de conexión a la base de datos
+
 include '../Controlador/conexion.php';
 
-// Inicializar un array para los roles
+
 $roles = [];
 
-// Realizar la consulta para obtener los roles
+
 $query = "SELECT id_rol, nombre_rol FROM rol_usuario";
 $result = $conn->query($query);
 
-// Verificar si se obtuvieron resultados
+
 if ($result && $result->num_rows > 0) {
-    // Almacenar los roles en el array
+   
     while ($row = $result->fetch_assoc()) {
         $roles[] = $row;
     }
 }
 
-// Cerrar la conexión
+
 $conn->close();
 ?>
 

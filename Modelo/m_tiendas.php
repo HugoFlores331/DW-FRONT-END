@@ -1,23 +1,22 @@
 <?php
-// Incluir archivo de conexión a la base de datos
+
 include '../Controlador/conexion.php';
 
-// Inicializar un array para las tiendas
+
 $tiendas = [];
 
-// Realizar la consulta para obtener las tiendas
+
 $query = "SELECT id_tienda, nombre FROM tienda";
 $result = $conn->query($query);
 
-// Verificar si se obtuvieron resultados
+
 if ($result && $result->num_rows > 0) {
-    // Almacenar las tiendas en el array
+    
     while ($row = $result->fetch_assoc()) {
         $tiendas[] = $row;
     }
 }
 
-// Cerrar la conexión
 $conn->close();
 ?>
 
