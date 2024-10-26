@@ -21,7 +21,7 @@
             </div>
 
             <div class="textoo">
-                <a href="menuUsuarios.php">Perfil</a>
+                <a href="menuUsuarios.php">Usuarios</a>
             </div>
             
             <div class="textoo">
@@ -29,7 +29,7 @@
             </div>
 
             <div class="textoo">
-                <a href="rastreo.php">Rastreo envio</a>
+                <a href="rastreo.php">Rastrear envio</a>
             </div>
 
             <div>

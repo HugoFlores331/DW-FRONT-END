@@ -29,7 +29,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="producto.php">
                 <div class="m-producto">
                         <p>Vista productos</p>
                         <img src="icon/vista-producto.png">

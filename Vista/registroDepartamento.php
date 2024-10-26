@@ -17,16 +17,19 @@
     <div class="container">
         <h1>Registro Departamento</h1>
         
-        <form action="procesar_tienda.php" method="POST">
+        <form action="#" method="POST">
             <label for="nombre">Nombre Departamento:</label>
             <input type="text" id="nombre" name="nombre"
               placeholder="Ingrese departamento"/>
             
-            <input type="submit" value="Crear Departamento">
+            <button>Crear Departamentos</button>
         </form>
         
         <h2>Lista de Tiendas</h2>
-        <button onclick="location.href='listadoDepartamento.php'">Ver Departamento</button>
+       
+        <a href="listadoDepartamento.php">
+            <button>Ver Departamento</button>
+        </a>
 
     </div>
 </body>
