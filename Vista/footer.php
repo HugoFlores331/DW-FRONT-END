@@ -9,7 +9,7 @@
     <body>
         <footer>
             <div>
-                <img src="#">
+                <img src="icon/logo.png" width="50">
             </div>
 
             <div>

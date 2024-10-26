@@ -15,7 +15,7 @@
             </div>
 
             <div class="cont">
-                <img src="#">
+                <img src="icon/logo.png" width="60">
             </div>
 
             <div class="cont">

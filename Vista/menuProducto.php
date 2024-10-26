@@ -52,5 +52,10 @@
             </a>
 
         </section>
+        <br>
+        <br>
+        <?php 
+            require('footer.php');
+        ?>
     </body>
 </html>

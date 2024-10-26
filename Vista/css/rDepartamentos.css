@@ -9,13 +9,12 @@ body
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0;
     margin: 0;
-    background:linear-gradient(#7209bf,#3f37c0)
+    background:#f4f4f4;
     
 }
 .container

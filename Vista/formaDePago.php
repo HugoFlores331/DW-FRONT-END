@@ -17,20 +17,21 @@
     <h2>Tus detalles</h2>
     <form>
         <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
         
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email">
 
         <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion">
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion">
 
         <label for="departamento">Departamento:</label>
         <select id="departamento" name="departamento" required>
+            <option value="0"></option>
             <option value="guatemala">Guatemala</option>
             <option value="alta_verapaz">Alta Verapaz</option>
             <option value="baja_verapaz">Baja Verapaz</option>
@@ -59,13 +60,13 @@
         </select>
 
         <label for="facturacion">Nombre para facturación:</label>
-        <input type="text" id="facturacion" name="facturacion">
+        <input type="text" id="facturacion" name="facturacion" placeholder="Nombre de la persona de la factura">
 
         <label for="nit">NIT (Sin Guion):</label>
-        <input type="text" id="nit" name="nit">
+        <input type="text" id="nit" name="nit" placeholder="Ingres el numero de nit">
 
-        <button type="submit">Enviar</button>
     </form>
+
 </div>
 
     <div class="form-container">
@@ -135,9 +136,15 @@
                 <input type="text" id="customAddress" name="customAddress" placeholder="Ingrese su dirección">
             </div>
 
-            <button type="submit">Enviar Pago</button>
+            <a href="rastreo.php">
+                <button>Proceder</button>
+            </a>
         </form>
     </div>
+
+    <br>
+    <br>
+    <br>
 
     <script src="js/formaDePago.js"></script> <!-- Enlazado con el archivo JavaScript -->
 </body>

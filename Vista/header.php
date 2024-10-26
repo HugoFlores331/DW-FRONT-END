@@ -11,7 +11,9 @@
     <body>
         <header>
             <div>
-                <img src="#">  <!--logo-->
+                <a href="menuInicio.php">
+                    <img src="icon/logo.png" width="60">  <!--logo-->
+                </a>
             </div>
 
             <div class="textoo">

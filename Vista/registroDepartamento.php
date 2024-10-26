@@ -12,6 +12,7 @@
         require('header.php');
     ?>
 
+    <br>
 
     <div class="container">
         <h1>Registro Departamento</h1>
