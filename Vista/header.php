@@ -26,6 +26,10 @@
                 <a href="menuTienda.php">Tiendas </a>
             </div>
 
+            <div class="textoo">
+                <a href="rastreo.php">Rastreo envio</a>
+            </div>
+
             <div>
                 <a href="carrito.php">
                     <img src="icon/agregar-compra.png" width="50">

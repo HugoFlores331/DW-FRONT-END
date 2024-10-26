@@ -9,16 +9,11 @@
 
     <body>
 
-        
-
-            <select name="user" id="user">
-                <option value="0">Tipo de usuario</option>
-                <option value="1">Administrador</option>
-                <option value="2">Mayorista</option>
-                <option value="3">Minorista</option>
-            </select>
-
-            <button>Aplicar</button>
+        <?php
+           require('header.php');
+                
+           require('../Modelo/m_rolUsuario.php');
+        ?>
 
         <section>
 
